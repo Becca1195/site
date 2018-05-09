@@ -29,22 +29,22 @@ gulp.task('styles', function() {
 
 // JS task
 
-gulp.task('js', function() {
-    gulp.src([
-            './src/js/main.js',
-        ])
-        .pipe(concat('script.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('./dist'));
-});
+// gulp.task('js', function() {
+//     gulp.src([
+//             './src/js/main.js',
+//         ])
+//         .pipe(concat('script.min.js'))
+//         .pipe(uglify())
+//         .pipe(gulp.dest('./dist'));
+// });
 
 // Default task
 
-gulp.task('default', ['styles','js']);
+// gulp.task('default', ['styles','js']);
 
 // Gulp Watch task
 
 gulp.task('watch', function() {
-    gulp.watch('src/js/*.js', ['js']);
+    // gulp.watch('src/js/*.js', ['js']);
     gulp.watch('sass/*/*.scss', ['styles']);
 });

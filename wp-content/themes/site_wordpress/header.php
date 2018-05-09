@@ -21,10 +21,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="site container">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'site_wordpress' ); ?></a>
 
-	<header id="masthead" class="site-header">
+<div class="navigation-bar">
+	<header id="masthead" class="site-header container">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -54,5 +55,6 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+</div>
 
 	<div id="content" class="site-content">

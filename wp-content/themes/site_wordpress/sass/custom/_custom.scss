@@ -1,3 +1,39 @@
-body {
-  background-color: lightblue;
+.main-navigation {
+  ul {
+    display: block;
+    text-align: center;
+  }
+  li {
+    a {
+      color: #414141;
+      margin: 0px .5em;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+    float: none !important;
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.navigation-bar {
+  border-bottom: 1px solid #d3d3d3;
+  padding: .5em;
+  width: 100%;
+  z-index: 999;
+}
+
+
+.developer-section {
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 50vh;
+  background: url(https://images.unsplash.com/photo-1497214068716-571605b05ca8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=265d6b9d9972c78c93e5a6ccf5307c0d&auto=format&fit=crop&w=1351&q=80) no-repeat 75% 50%;
+  background-size: cover;
+}
+
+.featured-blog {
+  margin-top: 2em;
 }
