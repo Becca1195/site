@@ -62,5 +62,15 @@ get_header();
 
 </div>
 
+<div class="container featured-blog">
+  <div class="jumbotron">
+    <h3>Contact Me</h3>
+  </div>
+
+<?php echo do_shortcode('[contact-form-7 id="1743" title="Contact form 1"]'); ?>
+
+</div>
+
+
 
 <?php get_footer();
