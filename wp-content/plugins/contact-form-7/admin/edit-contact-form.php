@@ -9,7 +9,7 @@ function wpcf7_admin_save_button( $post_id ) {
 	static $button = '';
 
 	if ( ! empty( $button ) ) {
-		echo $button;
+		echo $button; 
 		return;
 	}
 
@@ -37,7 +37,7 @@ function wpcf7_admin_save_button( $post_id ) {
 	} else {
 		echo esc_html( __( 'Edit Contact Form', 'contact-form-7' ) );
 	}
-?></h1> 
+?></h1>
 
 <?php
 	if ( ! $post->initial() && current_user_can( 'wpcf7_edit_contact_forms' ) ) {
